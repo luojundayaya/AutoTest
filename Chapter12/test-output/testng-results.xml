@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="用户管理系统测试套件" duration-ms="30454" started-at="2019-02-17T05:21:21Z" finished-at="2019-02-17T05:21:52Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="LoginTest.loginTrue()[pri:0, instance:com.course.cases.LoginTest@20e2cbe0]" name="loginTrue" class="com.course.cases.LoginTest"/>
+      </group> <!-- loginTrue -->
+      <group name="loginFalse">
+        <method signature="LoginTest.loginFalse()[pri:0, instance:com.course.cases.LoginTest@20e2cbe0]" name="loginFalse" class="com.course.cases.LoginTest"/>
+      </group> <!-- loginFalse -->
+    </groups>
+    <test name="用户管理系统测试用例" duration-ms="30454" started-at="2019-02-17T05:21:21Z" finished-at="2019-02-17T05:21:52Z">
+      <class name="com.course.cases.UpdateUserInfoTest">
+        <test-method status="PASS" signature="updateUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@51565ec2]" name="updateUserInfo" duration-ms="10653" depends-on-groups="loginTrue" started-at="2019-02-17T13:21:30Z" description="更改用户信息" finished-at="2019-02-17T13:21:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserInfo -->
+        <test-method status="FAIL" signature="deleteUser()[pri:0, instance:com.course.cases.UpdateUserInfoTest@51565ec2]" name="deleteUser" duration-ms="10632" depends-on-groups="loginTrue" started-at="2019-02-17T13:21:41Z" description="删除用户信息" finished-at="2019-02-17T13:21:51Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "{"timestamp":1550380901653,"status":500,"error":"Internal Server Error","exception":"org.springframework.jdbc.BadSqlGrammarException","message":"\r\n### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 7' at line 3\r\n### The error may involve com.course.updateUserInfo-Inline\r\n### The error occurred while setting parameters\r\n### SQL: update user                    where id = ?\r\n### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 7' at line 3\n; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 7' at line 3","path":"/v1/updateUserInfo"}"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "{"timestamp":1550380901653,"status":500,"error":"Internal Server Error","exception":"org.springframework.jdbc.BadSqlGrammarException","message":"\r\n### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 7' at line 3\r\n### The error may involve com.course.updateUserInfo-Inline\r\n### The error occurred while setting parameters\r\n### SQL: update user                    where id = ?\r\n### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 7' at line 3\n; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 7' at line 3","path":"/v1/updateUserInfo"}"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.course.cases.UpdateUserInfoTest.getResult(UpdateUserInfoTest.java:73)
+	at com.course.cases.UpdateUserInfoTest.deleteUser(UpdateUserInfoTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- com.course.cases.UpdateUserInfoTest -->
+      <class name="com.course.cases.GetUserInfoTest">
+        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:com.course.cases.GetUserInfoTest@675d3402]" name="getUserInfo" duration-ms="630" depends-on-groups="loginTrue" started-at="2019-02-17T13:21:29Z" description="获取userId为1的用户信息" finished-at="2019-02-17T13:21:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserInfo -->
+      </class> <!-- com.course.cases.GetUserInfoTest -->
+      <class name="com.course.cases.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.course.cases.LoginTest@20e2cbe0]" name="beforeTest" is-config="true" duration-ms="40" started-at="2019-02-17T13:21:21Z" description="测试准备工作，获取HttpClient对象" finished-at="2019-02-17T13:21:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.course.cases.LoginTest@20e2cbe0]" name="loginTrue" duration-ms="1639" started-at="2019-02-17T13:21:21Z" description="用户登陆成功接口测试" finished-at="2019-02-17T13:21:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTrue -->
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.course.cases.LoginTest@20e2cbe0]" name="loginFalse" duration-ms="536" started-at="2019-02-17T13:21:23Z" description="用户登陆失败接口测试" finished-at="2019-02-17T13:21:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFalse -->
+      </class> <!-- com.course.cases.LoginTest -->
+      <class name="com.course.cases.GetUserInfoListTest">
+        <test-method status="PASS" signature="getUserListInfo()[pri:0, instance:com.course.cases.GetUserInfoListTest@482f8f11]" name="getUserListInfo" duration-ms="643" depends-on-groups="loginTrue" started-at="2019-02-17T13:21:51Z" description="获取性别为男的用户信息" finished-at="2019-02-17T13:21:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserListInfo -->
+      </class> <!-- com.course.cases.GetUserInfoListTest -->
+      <class name="com.course.cases.AddUserTest">
+        <test-method status="FAIL" signature="addUser()[pri:0, instance:com.course.cases.AddUserTest@68be2bc2]" name="addUser" duration-ms="5636" depends-on-groups="loginTrue" started-at="2019-02-17T13:21:24Z" description="添加用户接口测试" finished-at="2019-02-17T13:21:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [{"timestamp":1550380884686,"status":500,"error":"Internal Server Error","exception":"org.springframework.dao.DataIntegrityViolationException","message":"\r\n### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value\r\n### The error may involve com.course.addUser-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into         user(userName,password,sex,age,permission,isDelete)         values         (?,?,?,?,?,?);\r\n### Cause: java.sql.SQLException: Field 'id' doesn't have a default value\n; SQL []; Field 'id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'id' doesn't have a default value","path":"/v1/addUser"}] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [{"timestamp":1550380884686,"status":500,"error":"Internal Server Error","exception":"org.springframework.dao.DataIntegrityViolationException","message":"\r\n### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value\r\n### The error may involve com.course.addUser-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into         user(userName,password,sex,age,permission,isDelete)         values         (?,?,?,?,?,?);\r\n### Cause: java.sql.SQLException: Field 'id' doesn't have a default value\n; SQL []; Field 'id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'id' doesn't have a default value","path":"/v1/addUser"}] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.course.cases.AddUserTest.addUser(AddUserTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+      </class> <!-- com.course.cases.AddUserTest -->
+    </test> <!-- 用户管理系统测试用例 -->
+  </suite> <!-- 用户管理系统测试套件 -->
+</testng-results>
