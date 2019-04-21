@@ -30,7 +30,7 @@ public class AddUserTest {
 
         Thread.sleep(5000);
 
-        User user = session.selectOne("addUser",addUserCase);
+ //       User user = session.selectOne("addUser",addUserCase);
 
  //       System.out.println(user.toString());
         Assert.assertEquals(addUserCase.getExpected(),result);
@@ -40,6 +40,7 @@ public class AddUserTest {
     private String getResult(AddUserCase addUserCase) throws IOException {
         HttpPost post = new HttpPost(TestConfig.addUserUrl);
         JSONObject param = new JSONObject();
+        param.put("id", addUserCase.getUserId());
         param.put("userName",addUserCase.getUserName());
         param.put("password",addUserCase.getPassword());
         param.put("sex",addUserCase.getSex());

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-用户管理系统测试套件">
-                    <span>C:\Users\admin\Desktop\testfirst\AutoTest\Chapter12\src\main\resources\testng.xml</span>
+                    <span>D:\MyGithub\AutoTest\Chapter12\src\main\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,16 @@
                       <a href="#" panel-name="suite-用户管理系统测试套件" class="show-methods passed suite-用户管理系统测试套件"> (show)</a> <!-- show-methods passed suite-用户管理系统测试套件 -->
                     </span>
                     <div class="method-list-content passed suite-用户管理系统测试套件">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.course.cases.AddUserTest" hash-for-method="addUser">addUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.course.cases.UpdateUserInfoTest" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.course.cases.GetUserInfoTest" hash-for-method="getUserInfo">getUserInfo</a> <!-- method navigator-link -->
@@ -140,9 +150,35 @@
           <div class="suite-用户管理系统测试套件-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.course.cases.GetUserInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserInfo">
+                  </a> <!-- getUserInfo -->
+                  <span class="method-name">getUserInfo</span>
+                  <em>
+(获取userId为1的用户信息)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-passed -->
+          <div class="suite-用户管理系统测试套件-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.course.cases.UpdateUserInfoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser">
+                  </a> <!-- deleteUser -->
+                  <span class="method-name">deleteUser</span>
+                  <em>
+(删除用户信息)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="updateUserInfo">
@@ -174,16 +210,16 @@
           <div class="suite-用户管理系统测试套件-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.course.cases.GetUserInfoTest</span>
+              <span class="class-name">com.course.cases.AddUserTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getUserInfo">
-                  </a> <!-- getUserInfo -->
-                  <span class="method-name">getUserInfo</span>
+                  <a name="addUser">
+                  </a> <!-- addUser -->
+                  <span class="method-name">addUser</span>
                   <em>
-(获取userId为1的用户信息)                  </em>
+(添加用户接口测试)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,7 +253,7 @@
         </div> <!-- panel 用户管理系统测试套件 -->
         <div panel-name="test-xml-用户管理系统测试套件" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\admin\Desktop\testfirst\AutoTest\Chapter12\src\main\resources\testng.xml</span>
+            <span class="header-content">D:\MyGithub\AutoTest\Chapter12\src\main\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -235,6 +271,11 @@
           &lt;include name=&quot;loginFalse&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.course.cases.LoginTest --&gt;
+      &lt;class name=&quot;com.course.cases.AddUserTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addUser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.course.cases.AddUserTest --&gt;
       &lt;class name=&quot;com.course.cases.GetUserInfoTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;getUserInfo&quot;/&gt;
@@ -243,6 +284,7 @@
       &lt;class name=&quot;com.course.cases.UpdateUserInfoTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;updateUserInfo&quot;/&gt;
+          &lt;include name=&quot;deleteUser&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.course.cases.UpdateUserInfoTest --&gt;
       &lt;class name=&quot;com.course.cases.GetUserInfoListTest&quot;&gt;
@@ -263,7 +305,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">用户管理系统测试用例 (4 classes)</span>
+                <span class="test-name">用户管理系统测试用例 (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -305,32 +347,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'updateUserInfo')
 data.setCell(0, 2, 'com.course.cases.UpdateUserInfoTest')
-data.setCell(0, 3, 10969);
+data.setCell(0, 3, 11201);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTrue')
-data.setCell(1, 2, 'com.course.cases.LoginTest')
-data.setCell(1, 3, 2218);
+data.setCell(1, 1, 'deleteUser')
+data.setCell(1, 2, 'com.course.cases.UpdateUserInfoTest')
+data.setCell(1, 3, 11159);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getUserInfo')
-data.setCell(2, 2, 'com.course.cases.GetUserInfoTest')
-data.setCell(2, 3, 999);
+data.setCell(2, 1, 'addUser')
+data.setCell(2, 2, 'com.course.cases.AddUserTest')
+data.setCell(2, 3, 6021);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getUserListInfo')
-data.setCell(3, 2, 'com.course.cases.GetUserInfoListTest')
-data.setCell(3, 3, 959);
+data.setCell(3, 1, 'loginTrue')
+data.setCell(3, 2, 'com.course.cases.LoginTest')
+data.setCell(3, 3, 2286);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginFalse')
-data.setCell(4, 2, 'com.course.cases.LoginTest')
-data.setCell(4, 3, 846);
+data.setCell(4, 1, 'getUserListInfo')
+data.setCell(4, 2, 'com.course.cases.GetUserInfoListTest')
+data.setCell(4, 3, 1124);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getUserInfo')
+data.setCell(5, 2, 'com.course.cases.GetUserInfoTest')
+data.setCell(5, 3, 1102);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginFalse')
+data.setCell(6, 2, 'com.course.cases.LoginTest')
+data.setCell(6, 3, 1101);
 window.suiteTableData['用户管理系统测试套件']= { tableData: data, tableDiv: 'times-div-用户管理系统测试套件'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-用户管理系统测试套件">
               </div> <!-- times-div-用户管理系统测试套件 -->
             </div> <!-- times-div -->
@@ -345,16 +395,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-用户管理系统测试套件" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.course.cases.UpdateUserInfoTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">deleteUser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-用户管理系统测试套件" class="panel">
@@ -370,32 +413,43 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTrue</span>
-                <span class="method-start">58 ms</span>
+                <span class="method-start">57 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginFalse</span>
-                <span class="method-start">2277 ms</span>
+                <span class="method-start">2344 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.course.cases.AddUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addUser</span>
+                <span class="method-start">3447 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.course.cases.GetUserInfoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getUserInfo</span>
-                <span class="method-start">3130 ms</span>
+                <span class="method-start">9469 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.course.cases.UpdateUserInfoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">updateUserInfo</span>
-                <span class="method-start">4129 ms</span>
+                <span class="method-start">10572 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser</span>
+                <span class="method-start">21774 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.course.cases.GetUserInfoListTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getUserListInfo</span>
-                <span class="method-start">15098 ms</span>
+                <span class="method-start">32933 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

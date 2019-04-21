@@ -9,11 +9,11 @@
                 </methods>
             </class>
             
-            <!-- <class name="com.course.cases.AddUserTest">
+            <class name="com.course.cases.AddUserTest">
                 <methods>
                     <include name="addUser"/>
                 </methods>
-            </class> -->
+            </class>
             
             <class name="com.course.cases.GetUserInfoTest">
                 <methods>
@@ -25,7 +25,7 @@
             <class name="com.course.cases.UpdateUserInfoTest">
                 <methods>
                     <include name="updateUserInfo"/>
-                    <!-- <include name="deleteUser"/> -->
+                    <include name="deleteUser"/>
                 </methods>
             </class>
             

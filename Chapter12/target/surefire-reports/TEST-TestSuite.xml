@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="17.599" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="35.42" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_191\bin"/>
     <property name="java.vm.version" value="25.191-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\admin\Desktop\testfirst\AutoTest\Chapter12"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\MyGithub\AutoTest\Chapter12"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,43 +16,43 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\admin\Desktop\testfirst\AutoTest\Chapter12"/>
+    <property name="user.dir" value="D:\MyGithub\AutoTest\Chapter12"/>
     <property name="java.runtime.version" value="1.8.0_191-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_191\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\admin\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\16510\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\eclipseWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1477424036094211653.tmp"/>
+    <property name="classworlds.conf" value="D:\MyGithub\Local\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8081395270919072606.tmp"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\admin\Downloads\apache-maven-3.5.3-bin\apache-maven-3.5.3\bin;C:\Users\admin\AppData\Local\Programs\Python\Python36\Scripts;D:\webDriver;D:\android-sdk-windows\platform-tools;D:\android-sdk-windows\tools;D:\Appium;D:\Appium\node_modules\.bin;C:\Program Files\Git\cmd;D:\eclipseWorkspace\operation2\src\main\resources\tessdata;D:\eclipseWorkspace\operation2\tessdata;C:\Program Files (x86)\Tesseract-OCR;C:\Program Files (x86)\Mozilla Firefox;C:\Users\admin\Desktop\testfirst\interface_autotest\autotest\moco;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;;D:\fildler\Fiddler;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Application\Git\cmd;C:\Program Files\Java\jdk1.8.0_121\bin;D:\Application\apache-maven-3.5.3\bin;C:\Program Files\Java\jdk1.8.0_121\jre\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\16510\AppData\Local\Microsoft\WindowsApps;;D:\Application\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\admin"/>
+    <property name="user.home" value="C:\Users\16510"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="admin"/>
-    <property name="java.class.path" value="C:\Users\admin\Downloads\apache-maven-3.5.3-bin\apache-maven-3.5.3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="user.name" value="luojun"/>
+    <property name="java.class.path" value="D:\Application\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.10.0.20181127-2120\jars\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -gs C:\Users\admin\Downloads\apache-maven-3.5.3-bin\apache-maven-3.5.3\conf\settings.xml install"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_191"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -gs D:\Application\apache-maven-3.5.3\conf\settings.xml install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_191"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_191\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_191\lib\resources.jar;C:\Program Files\Java\jre1.8.0_191\lib\rt.jar;C:\Program Files\Java\jre1.8.0_191\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_191\lib\jce.jar;C:\Program Files\Java\jre1.8.0_191\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_191\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\lib\tools.jar"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\admin\Downloads\apache-maven-3.5.3-bin\apache-maven-3.5.3"/>
+    <property name="maven.home" value="D:\MyGithub\AutoTest\Chapter12\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -60,9 +60,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="loginTrue" classname="com.course.cases.LoginTest" time="2.219"/>
-  <testcase name="loginFalse" classname="com.course.cases.LoginTest" time="0.849"/>
-  <testcase name="getUserInfo" classname="com.course.cases.GetUserInfoTest" time="0.998"/>
-  <testcase name="updateUserInfo" classname="com.course.cases.UpdateUserInfoTest" time="10.969"/>
-  <testcase name="getUserListInfo" classname="com.course.cases.GetUserInfoListTest" time="0.959"/>
+  <testcase name="loginTrue" classname="com.course.cases.LoginTest" time="2.287"/>
+  <testcase name="loginFalse" classname="com.course.cases.LoginTest" time="1.099"/>
+  <testcase name="addUser" classname="com.course.cases.AddUserTest" time="6.02"/>
+  <testcase name="getUserInfo" classname="com.course.cases.GetUserInfoTest" time="1.103"/>
+  <testcase name="updateUserInfo" classname="com.course.cases.UpdateUserInfoTest" time="11.202"/>
+  <testcase name="deleteUser" classname="com.course.cases.UpdateUserInfoTest" time="11.158"/>
+  <testcase name="getUserListInfo" classname="com.course.cases.GetUserInfoListTest" time="1.124"/>
 </testsuite>
